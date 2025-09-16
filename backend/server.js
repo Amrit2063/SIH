@@ -3,13 +3,13 @@ const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 
-// const connectDB = require('./config/db');
-// const errorHandler = require('./middleware/errorMiddleware');
+const connectDB = require('./config/db');
+const errorHandler = require('./middleware/errorMiddleware');
 
-// const authRoutes = require('./routes/authRoutes');
-// const routeRoutes = require('./routes/routeRoutes');
-// const busRoutes = require('./routes/busRoutes');
-// const trackingRoutes = require('./routes/trackingRoutes');
+const authRoutes = require('./routes/authRoutes');
+const routeRoutes = require('./routes/routeRoutes');
+const busRoutes = require('./routes/busRoutes');
+const trackingRoutes = require('./routes/trackingRoutes');
 
 const app = express();
 connectDB();
